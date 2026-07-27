@@ -1,0 +1,180 @@
+#homePage {
+    min-height: 100vh;
+    background-image: url("./siteBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about {
+    min-height: 100vh;
+    background-image: url("./siteBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#contact {
+    min-height: 100vh;
+    background-image: url("./siteBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #dbe7f3);
+    color:white;
+}
+
+
+#socials {
+    text-align: left;
+}
+
+#socials img {
+    width: 30px;
+    height: 30px;
+}
+
+nav {
+    background-color: #4099b7;
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+    
+nav ul {
+      list-style-type: none;
+      /* padding: 0; */
+    }
+    
+nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+
+nav img {
+    width: 50px;
+    height: 50px;
+}
+
+#homeTitle,
+#homeSummary {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+#homeTitle {
+    font-size: 64px;
+    max-width: 700px;
+}
+
+#homeSummary {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 750px;
+}
+
+#aboutUs {
+    font-size: 64px;
+    max-width: 700px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#aboutSummary {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin-bottom: 50px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#ourTeam {
+    font-size: 56px;
+    margin-bottom: 30px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 12px 18px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.team-members {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.team-member {
+    flex: 1;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 22px;
+    border-radius: 10px;
+}
+
+.team-member h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.team-member p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.role {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background-color: #4099b7;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#contact > h1,
+#contact > p,
+#contactForm {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact > h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+}
+
+#contact > p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}

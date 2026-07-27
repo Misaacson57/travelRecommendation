@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+      <style>
+        #contactForm {
+        max-width: 400px;
+        margin: 0 auto;
+        }
+        #contactForm input,
+        #contactForm textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 8px;
+        }
+        #contactForm button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        }
+        #contactForm button:hover {
+        background-color: #0056b3;
+        }
+  </style>
+    </head>
+
+    <body>
+        <nav>
+            <img src="./logo.png" alt="Travel Idea Logo">
+            <h1>Travel Idea</h1>
+            <ul>
+                <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+                <li><a href="./about_us.html" id="about_us">About Us </a></li>
+                <li><a href="./contact_us.html" id="contact_us">Contact Us </a></li>
+            </ul>
+        </nav>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>Get in touch or let us know any tips or concerns</p>
+
+            <form id="contactForm">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <script>
+                const contactForm = document.getElementById('contactForm');
+
+                contactForm.addEventListener("submit", function(event){
+                    event.preventDefault();
+                
+                    const name = document.getElementById("name").value.trim();
+                    const email = document.getElementById("email").value.trim();
+                    const message = document.getElementById("message").value.trim();
+                    if (name && email && message){
+                        alert("Thank you for contacting us!");
+                        contactForm.reset();
+                    }else{
+                        alert("Fill all fields");
+                    }
+                });    
+            </script>
+            <div id="socials">
+                <a href="https://www.instagram.com/mike.isaacson57" target="_blank" rel="noopener noreferrer">
+                    <img src="./insta.png" alt="Instagram">
+                </a>
+            </div> 
+        </section>
+    </body>
+</html>
