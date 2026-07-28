@@ -189,34 +189,35 @@ nav img {
 
 #result {
     display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
-    gap: 20px;
-    align-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1200px;
 }
 
 .result-card {
-    overflow: hidden;
     background-color: white;
     color: #222;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.result-card img{
+.result-card img {
     display: block;
     width: 100%;
-    height: 220px;
+    height: 140px;
     object-fit: cover;
 }
 
-.result-card-content{
-    padding: 16px;
+.result-card-content {
+    padding: 10px;
 }
 
 .result-card h2 {
-    margin-bottom: 8px;
-    font-size: 22px;
+    margin-bottom: 6px;
+    font-size: 17px;
 }
 
 .result-card p {
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.3;
 }
