@@ -178,3 +178,45 @@ nav img {
     line-height: 1.6;
     margin-bottom: 25px;
 }
+
+#searchResults {
+    min-height: 100vh;
+    background-image: url("./siteBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#result {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.result-card {
+    overflow: hidden;
+    background-color: white;
+    color: #222;
+}
+
+.result-card img{
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.result-card-content{
+    padding: 16px;
+}
+
+.result-card h2 {
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.result-card p {
+    font-size: 15px;
+    line-height: 1.5;
+}
